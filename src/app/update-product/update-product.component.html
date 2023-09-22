@@ -1,0 +1,27 @@
+<!-- <p>update-product works!</p> -->
+<form>
+  <div class=" col-md-7 mx-4 ">
+    <h3>EDIT DATA</h3>
+    <label for="exampleInputEmail1" class="form-label">Product Name</label>
+    <input type=text [(ngModel)]="madal.prod_name" id="name"name="name" class="form-control" id="exampleInputEmail1"
+      aria-describedby="emailHelp">
+    <!-- </div> -->
+    <!-- <div class="mb-3"> -->
+    <label for="exampleInputPassword1" class="form-label">Price</label>
+    <input type="number" [(ngModel)]="madal.price"id= "price" name="price" class="form-control" id="exampleInputPassword1">
+    <label class="form-label">Description</label>
+    <input [(ngModel)]="madal.description" id="description" name="description" type="text" class="form-control" id="exampleInputPassword1">
+    <div class="edit">
+      <!-- <button class="mb-1" (click)="Del()" type="submit" class="btn btn-danger">CLICK TO DELETE</button> -->
+      <button (click)="Del()" type="submit" class="but_del">
+        <span>CLICK TO DELETE</span>
+      </button>
+
+      <!-- <button class="mb-1"  (click)="submit()" type="submit" class="btn btn-primary">CLICK TO SAVE</button> -->
+      <button (click)="submit()" type="submit" class="but_save">
+        <span>CLICK TO SAVE</span>
+      </button>
+
+    </div>
+  </div>
+</form>

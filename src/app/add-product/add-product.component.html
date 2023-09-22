@@ -1,0 +1,20 @@
+<!-- <p>add-product works!</p> -->
+<form>
+  <div class=" col-md-7 mx-4 ">
+    <h2>ADD A PRODUCT HERE!</h2>
+    <label for="exampleInputEmail1" class="form-label">Product Name</label>
+    <input type=text class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" id="prod_name"
+      name="prod_name" [(ngModel)]="madal.prod_name">
+    <label for="exampleInputPassword1" class="form-label">Price</label>
+    <input type="number" class="form-control" id="exampleInputPassword1" id="price" name="price"
+      [(ngModel)]="madal.price">
+    <label class="form-label">Description</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" id="description" name="description"
+      [(ngModel)]="madal.description">
+    <div class="submit">
+      <button (click)="onAdd()" type="submit" class="but_add">
+        <span>CLICK TO ADD</span>
+      </button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,81 @@
+.submit{
+    /* border: 2px solid green; */
+    margin-top: 1em;
+    display: flex;
+    justify-content: right;
+}
+/************************************************      ADdd  button's css                        ***/
+.but_add {
+    font-size: large;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background: #183153;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+   }
+   
+   .but_add:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #FFD401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   .but_add:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   .but_add span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 7px 12px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .but_add:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+   
+/***********************     ************************************************************/
+.form-label{
+    font-size: large;
+    font-weight: 600;
+}
+
+h2{
+    color: rgb(99, 26, 26);
+}
+
+
+

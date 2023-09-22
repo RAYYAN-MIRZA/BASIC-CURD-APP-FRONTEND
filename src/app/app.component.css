@@ -1,0 +1,13 @@
+/* .navbar-custom{ */
+    /*background-color: blue;            /* this aint working if it works than the funtionality of bootstrap disaapppers*/
+/* } */
+
+
+.navbar a{
+    color:brown;
+    font-size: large;
+    font-weight: 500;
+}
+button{
+    color:brown;
+}
