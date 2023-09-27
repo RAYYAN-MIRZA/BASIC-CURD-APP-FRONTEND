@@ -4,3 +4,9 @@ export interface inventory{
     price:number;
     description :string;
 }
+
+export interface InventoryResponse {
+    dataToSend: inventory[]; // An array of inventory items
+    totalSize: number; // The total size of the inventory collection
+  }
+  
